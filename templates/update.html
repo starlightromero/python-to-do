@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>Update To-Do</h1>
+
+<form action="/update/{{ todo.id }}" method="POST">
+ <input type="text" name="todo" id="todo" value="{{ todo.todo }}">
+ <input type="submit" name="submit" value="Update To-Do">
+</form>
+
+{% endblock %}

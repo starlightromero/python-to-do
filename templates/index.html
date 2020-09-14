@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h1>Python To-Do</h1>
+
+{% if todos|length < 1 %}
+<h4>There are no to-dos. Create one below!</h4>
+{% else %}
+
+{% for todo in todos %}
+<div class="todo">
+  <p>{{ todo.todo }}</p>
+  <div class="todo-actions">
+    <button onclick="window.location.href='/update/{{ todo.id }}'">Update</button>
+    <button onclick="window.location.href='/delete/{{ todo.id }}'">Delete</button>
+  </div>
+</div>
+{% endfor %}
+
+{% endif %}
+
+<form action="/" method="POST">
+ <input type="text" name="todo" id="todo">
+ <input type="submit" name="submit" value="Add Todo">
+</form>
+
+{% endblock %}

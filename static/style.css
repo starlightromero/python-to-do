@@ -1,0 +1,95 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  align-items: center;
+  background-color: #3a3a3a;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Josefin Slab', serif;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h4 {
+  color: #A5FF70;
+}
+
+form {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0.5rem;
+  width: 600px;
+}
+
+input {
+  font-size: 16px;
+}
+
+input[type=text] {
+  appearance: none;
+  border: none;
+  border-bottom: 3px solid #5AE862;
+  background-color: transparent;
+  color: #A5FF70;
+  outline: #5AE862;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+}
+
+input[type=submit] {
+  background-color: #3a3a3a;
+  border: 3px solid #5AE862;
+  color: #5AE862;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+
+input[type=submit]:hover {
+  background-color: #A5FF70;
+  border: 3px solid #5AE862;
+  color: #3a3a3a;
+}
+
+p {
+  color: #3a3a3a;
+  padding: 0.5rem 1rem;
+}
+
+button {
+  background-color: #FFF46B;
+  border: none;
+  color: #3a3a3a;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+
+button:hover {
+  background-color: #3a3a3a;
+  color: #FFF46B;
+}
+
+.todo {
+  align-items: center;
+  background-color: #A4FE70;
+  border: 5px solid #5AE862;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5rem;
+  width: 600px;
+}
+
+.todo-actions {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 250px;
+}
